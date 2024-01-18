@@ -1,13 +1,15 @@
 
 :root{
-    --mainColor: rgb(255, 106, 0);
+    --mainColor: rgb(250, 166, 106);
     --lightColor:#97dfd3;
     --darkColor: #282828;
     --whiteColor:#eee;
+    --navFotColor: rgb(255, 106, 0);
 }
 
 * {
     border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -21,7 +23,7 @@ nav{
     top: 0;
     right: 0;
 
-    background-color: var(--mainColor);
+    background-color: var(--navFotColor);
     width: 100vw;
     z-index: 1;
     list-style-type: none;
@@ -87,12 +89,12 @@ nav ul a:hover {
 h1 {
     text-align: center;
     background-color: var(--darkColor);
-    width: 20rem;
-    margin: 12px auto;
-    margin-top: 0;
+    width: 30rem;
+    margin: 1em auto;
     color: var(--whiteColor);
     font-family: 'Times New Roman', Times, serif;
-    padding: 2px;
+    padding: 6px;
+    font-size: 2.5em;
 }
 
 @media(orientation: landscape){
@@ -158,7 +160,7 @@ h1 {
 
 
 footer {
-    background-color: var(--mainColor);
+    background-color: var(--navFotColor);
     width: 100vw;
     z-index: 1;
     border-radius: 0;
