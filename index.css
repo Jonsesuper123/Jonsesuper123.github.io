@@ -14,7 +14,7 @@
 
 body{
     margin: 0;
-    min-height: 200vh;
+    /* min-height: 200vh; */
     background-color: var(--whiteColor);
 }
 
@@ -38,13 +38,13 @@ nav ul{
     align-items: center;
 }
 
-nav ul a{
+a{
     padding: 8px;
     text-decoration: none;
     color: var(--darkColor);
 }
 
-nav ul a:hover {
+a:hover {
     background-color: var(--darkColor);
     color: var(--mainColor);
 }
@@ -78,18 +78,30 @@ nav ul a:hover {
     }
 }
 
-.wrapper{
-    margin: auto;
-    padding: 1em;
-    width: 95vw;
-    background-color: var(--mainColor);
-    border-radius: 0 0 1em 1em;
+@media(orientation: landscape){
+    .wrapper{
+        margin: auto;
+        padding: 1em;
+        width: 95vw;
+        background-color: var(--mainColor);
+        border-radius: 0 0 1em 1em;
+    }
+}
+
+@media(orientation: portrait){
+    .wrapper{
+        margin: auto;
+        padding: 1em;
+        width: calc(100vw - 2em);
+        background-color: var(--mainColor);
+        border-radius: 0 0 1em 1em;
+    }
 }
 
 h1 {
     text-align: center;
     background-color: var(--darkColor);
-    width: 30rem;
+    max-width: 30rem;
     margin: 1em auto;
     color: var(--whiteColor);
     font-family: 'Times New Roman', Times, serif;
@@ -159,11 +171,27 @@ h1 {
 
 
 
+/* Kontakt */
+
+#kontaktinfo {
+    line-height: 2em;
+}
+
+
+
+/* Om meg */
+
+#kameler {
+    width: 100%;
+}
+
+
 footer {
     background-color: var(--navFotColor);
-    width: 100vw;
+    width: calc(100vw - 2em);
     z-index: 1;
     border-radius: 0;
-    height: 10em;
-    margin-top: 10em;
+    min-height: 10em;
+    margin-top: 15em;
+    padding: 1em;
 }
