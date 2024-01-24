@@ -24,7 +24,7 @@ nav{
     right: 0;
 
     background-color: var(--navFotColor);
-    width: 100vw;
+    /* width: 100vw; */
     z-index: 1;
     list-style-type: none;
     border-radius: 0;
@@ -148,14 +148,17 @@ h1 {
 
 #boks1 {
     grid-area: boks1;
+    text-align: center;
 }
 
 #boks2 {
     grid-area: boks2;
+    text-align: center;
 }
 
 #boks3 {
     grid-area: boks3;
+    text-align: center;
 }
 
 #boks4 {
@@ -167,6 +170,16 @@ h1 {
 
 #canny_cat {
     height: 16em;
+}
+
+.parallax{
+    background-image: url("images/canny_cat.jpeg");
+    min-height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 4em;
+    border: 2px solid var(--darkColor);
 }
 
 
@@ -188,7 +201,7 @@ h1 {
 
 footer {
     background-color: var(--navFotColor);
-    width: calc(100vw - 2em);
+    /* width: calc(100vw - 2em); */
     z-index: 1;
     border-radius: 0;
     min-height: 10em;
