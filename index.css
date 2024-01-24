@@ -1,4 +1,7 @@
 
+/* 
+    dette standariserer mitt bruk av farger.
+*/
 :root{
     --mainColor: rgb(250, 166, 106);
     --lightColor:#97dfd3;
@@ -30,14 +33,16 @@ nav{
     border-radius: 0;
 }
 
-nav ul{
+nav > ul{
     display: flex;
     margin: 0 1em;
     padding: 0;
     list-style-type: none;
     align-items: center;
 }
-
+/*
+    knapper til navbar
+*/
 a{
     padding: 8px;
     text-decoration: none;
@@ -185,6 +190,13 @@ h1 {
 
 
 /* Kontakt */
+
+.parallaxKontakt{
+    background-image: url("images/canny_cat.jpeg");
+min-height: 80vh;    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 
 #kontaktinfo {
     line-height: 2em;
