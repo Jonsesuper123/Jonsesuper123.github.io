@@ -17,7 +17,7 @@
 
 body{
     margin: 0;
-    /* min-height: 200vh; */
+    /* min-height: 200vh; for å se om navbar funkær*/
     background-color: var(--whiteColor);
 }
 
@@ -75,6 +75,11 @@ a:hover {
     width: calc(100vw - 16px);
     border-radius: 0 0 1em 1em;
     vertical-align: middle;
+    aspect-ratio: 1500 / 919;
+    transition: ease-in-out 2s;
+}
+
+#heroImg:hover {
 }
 
 @media(orientation: portrait){
@@ -115,7 +120,7 @@ h1 {
 }
 
 @media(orientation: landscape){
-    .gridboks {
+    #gridboks {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         /* grid-template-rows: 1fr 2fr; */
@@ -130,7 +135,7 @@ h1 {
 }
 
 @media(orientation: portrait){
-    .gridboks {
+    #gridboks {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -149,21 +154,19 @@ h1 {
     border: 1px solid var(--whiteColor);
     background-color: var(--darkColor);
     color: var(--whiteColor);
+    text-align: center;
 }
 
 #boks1 {
     grid-area: boks1;
-    text-align: center;
 }
 
 #boks2 {
     grid-area: boks2;
-    text-align: center;
 }
 
 #boks3 {
     grid-area: boks3;
-    text-align: center;
 }
 
 #boks4 {
@@ -171,6 +174,7 @@ h1 {
     display: flex;
 
     gap: 1em;
+    text-align: left;
 }
 
 #canny_cat {
@@ -193,7 +197,8 @@ h1 {
 
 .parallaxKontakt{
     background-image: url("images/canny_cat.jpeg");
-min-height: 80vh;    background-attachment: fixed;
+    /* min-height: 75vh; */
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
