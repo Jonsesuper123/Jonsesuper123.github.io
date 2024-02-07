@@ -15,3 +15,17 @@ console.log("DOG");*/
 }
 
 styleTimer()*/
+
+// Henter <h1>-elementet
+let cookieEl = document.querySelector("#cookie");
+
+// Undersøker om localStorage-variabelen er satt
+if (localStorage.antallBesok) {
+  // Alt lagres som tekst i localStorage, så vi må gjøre om til tall
+  localStorage.antallBesok = Number(localStorage.antallBesok) + 1;
+} else {
+  localStorage.antallBesok = 1;
+}
+
+// Oppdaterer teksten i <h1>-elementet
+cookieEl.innerHTML = "Dette er ditt " + localStorage.antallBesok + ". besøk på denne nettsiden.";

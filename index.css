@@ -79,8 +79,10 @@ a:hover {
     transition: ease-in-out 2s;
 }
 
+/* 
 #heroImg:hover {
 }
+*/
 
 @media(orientation: portrait){
     #heroImg{
